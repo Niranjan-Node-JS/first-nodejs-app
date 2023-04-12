@@ -1,71 +1,3 @@
-
-// const logger = require('./logger');
-
-
-// logger.log('message');
-
-// function sayHello(name){
-// console.log('Hello ', name);
-// }
-
-// sayHello('Chintoo');
-
-//==================================
-// const path = require('path');
-
-// var pathobj = path.parse(__filename);
-
-// console.log(pathobj);
-
-//======================================
-
-// const os = require('os');
-
-// var totalMemory = os.totalmem();
-// var freeMemory = os.freemem();
-
-// console.log('Used Memory of the System: ' + (totalMemory - freeMemory));
-
-// console.log(`Total Memory: ${totalMemory} and the Free Memory: ${freeMemory}`);
-
-//================================
-
-// const fs = require('fs');
-
-// //const files = fs.readdirSync('./');
-// //console.log(files);
-
-// const files = fs.readdir('./', function(err, files) {
-//     if(err) console.log('Error', err);
-//     else console.log('Result ', files);
-// });
-
-
-//=======================================
-// //EVENTS
-
-// const EventEmitter = require('events');
-// const emitter = new EventEmitter();
-
-// //Register a Listener
-// // emitter.on('messageLogged', function(arg){
-// //     console.log('Listener Called', arg);
-// // });
-
-// //  The Above function with ARROW Funciton in EC6
-// emitter.on('messageLogged', (arg) => {
-//     console.log('Listener Called', arg);
-// });
-
-
-// //Raise an event
-// emitter.emit('messageLogged', { id: 1, url: 'http://localhost/'});
-
-// //Raise: logging (data: message)
-
-//===============================================
-
-// EXPRESS JS REST
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 80;
@@ -184,8 +116,5 @@ app.get('/api/v1/donuts', (req, res) => {
     ]));
 });
 
-// server.on('connection', (socket) => {
-//     console.log('New Connection...');
-// });
 app.listen(port, () => console.log('Listening on port {$port}...'));
 
